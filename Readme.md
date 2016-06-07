@@ -1,15 +1,12 @@
-![Qualy Presenter](https://raw.githubusercontent.com/Qualy-org/qualy-presenter/master/src/img/qualy-presenter.png)
+# Front in Sampa 16 - JS <3 Music
 
-This is a boilerplate to use [Reveal.JS](http://lab.hakim.se/reveal-js/) easily with [Gulp](http://gulpjs.com/), [Jade](http://jade-lang.com/) and [Stylus](http://learnboost.github.io/stylus/).
-
-To know more about Reveal.js and how to use, [read the docs here](https://github.com/hakimel/reveal.js).
-
+This Presentation uses [Qualy Boilerplate](https://github.com/Qualy-org/qualy-presenter)
 
 ## Getting Started
 
-### Demo
+### Live
 
-You can see the demo [here](http://qualy-org.github.io/qualy-presenter/)
+You can see the demo [here](http://willianjusten.com.br/front-in-sampa/)
 
 ### Installation
 
@@ -20,8 +17,8 @@ First of all, install the dependencies to run this boilerplate.
 
 ```sh
 # Clone this repository
-$ git clone git@github.com:Qualy-org/qualy-presenter.git new_project
-$ cd new_project
+$ git clone git@github.com:willianjusten/front-in-sampa.git
+$ cd front-in-sampa
 
 # install dependencies
 $ npm install
@@ -129,15 +126,8 @@ gulp deploy-pages
 - `gulp jade`: compile jade files
 - `gulp deploy-pages`: deploy compiled files at `build` to `github` on branch `gh-pages`.
 
-### Examples
-
-Some presentations using the boilerplate:
-
-- [Criando Experiências com SVG](http://willianjusten.com.br/semcomp-2015/#/)
-- [Passos para se ter um projeto com qualidade](http://willianjusten.com.br/imasters-2015/#/)
-
 ### License
 
-This boilerplate is free and open source software, distributed under the The MIT License. So feel free to use this to create your site without linking back to me or using a disclaimer.
+This presentation is free and open source software, distributed under the The MIT License. So feel free to use this to create your site without linking back to me or using a disclaimer.
 
 If you’d like to give me credit somewhere on your blog or tweet a shout out to [@willian_justen](https://twitter.com/willian_justen), that would be pretty sweet.

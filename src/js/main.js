@@ -17,4 +17,6 @@ Reveal.initialize({
 
 function heartBeat() {
     document.getElementById('heart').classList.add('activated');
+    var audio = new Audio('musics/heartbeat.mp3');
+	audio.play();
 }

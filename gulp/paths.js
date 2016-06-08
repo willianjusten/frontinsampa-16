@@ -6,6 +6,7 @@ module.exports = {
         templates: 'src/templates/**/*.jade',
         slides: 'src/slides/*.jade',
         js: 'src/js/**/*.js',
+        music: 'src/musics/**/*',
         styl: 'src/styl/**/*.styl',
         img: 'src/img/**/*',
         files: {
@@ -26,6 +27,7 @@ module.exports = {
     build: {
       html: './build/',
       js: 'build/js',
+      music: 'build/musics',
       css: 'build/css',
       img: 'build/img',
       notes: 'build/js/vendor/notes/'

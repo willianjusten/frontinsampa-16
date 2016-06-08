@@ -13,3 +13,8 @@ Reveal.initialize({
 		{ src: 'js/vendor/notes/notes.js', async: true }
 	]
 });
+
+
+function heartBeat() {
+    document.getElementById('heart').classList.add('activated');
+}

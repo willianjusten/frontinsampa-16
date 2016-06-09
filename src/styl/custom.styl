@@ -15,12 +15,43 @@
         &.activated
             animation pulse 1.3s ease
             animation-iteration-count 4
+    .align-left
+        text-align left
+    hr
+        border 1px dashed #000
+    > .backgrounds
+        background #222
 
-.align-left
-    text-align left
-
-hr
-    border 1px dashed #000
+    .list-itens
+        list-style none
+        margin-top 80px
+        li
+            display: inline-block
+            text-align: center
+            border 1px dashed #ccc
+            width 25%
+            height 178px
+            vertical-align middle
+            padding 2%
+            margin 1%
+            &.visualizers
+                border-color #a23
+                line-height 170px
+            &.dsp
+                line-height 58px
+                border-color #a23
+            &.web-audio
+                padding 71px 2% 0
+                height 147px
+                border-color #a23
+                
+    .web-audio-options
+        margin-top 40px
+    .highlight-item
+        color #a23
+    section img
+        border none
+        background transparent
 
 @keyframes pulse
   0% 

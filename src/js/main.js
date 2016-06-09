@@ -14,12 +14,16 @@ Reveal.initialize({
     ]
 });
 
-var played = false;
+
 function heartBeat() {
-    if(!played) {
-        document.getElementById('heart').classList.add('activated');
-        var audio = new Audio('musics/heartbeat.mp3');
-        audio.play();
-    }
-    played = true;
+    document.getElementById('heart').classList.add('activated');
+    var audio = new Audio('musics/heartbeat.mp3');
+    audio.play();
 }
+
+function winamp() {
+    var audio = new Audio('musics/winamp.mp3');
+    audio.play();
+}
+
+Reveal.addEventListener('winamp', winamp);

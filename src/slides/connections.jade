@@ -1,0 +1,12 @@
+section
+    h3 Criando analyser e conexões
+    pre.prettyprint
+        code.javascript.
+            audioContext = new window.AudioContext();
+            source = audioContext.createMediaElementSource(audio);
+
+            analyser = audioContext.createAnalyser();
+            fbc_array = new Uint8Array(analyser.frequencyBinCount);
+
+            source.connect(analyser);
+            analyser.connect(audioContext.destination);

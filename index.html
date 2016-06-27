@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS <3 Music - Front in Sampa 16</title>
+    <meta name="description" content="Uma apresentação sobre a utilização de Web Audio API para criar Visualizações baseadas em música.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/folder-img.png">
+    <meta property="og:description" content="Uma apresentação sobre a utilização de Web Audio API para criar Visualizações baseadas em música.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/vendor/reveal.min.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1 class="main-title">
+             
+            JS<span id="heart" onclick="heartBeat()" class="heart"></span>MUSIC
+          </h1>
+          <p class="main-links"><a href="http://willianjusten.com.br/">Willian Justen </a>/ <a href="https://twitter.com/Willian_justen">@willianjusten</a></p>
+        </section>
+        <section>
+          <section class="align-left">
+            <div>
+              <p>As vezes eu escrevo...</p><a href="http://willianjusten.com.br">willianjusten.com.br</a>
+            </div>
+            <div class="fragment">
+              <hr>
+              <p>As vezes eu faço código open source...</p><a href="http://github.com/willianjusten">github.com/willianjusten</a>
+            </div>
+            <div class="fragment">
+              <hr>
+              <p>E também faço cursos online!</p><a href="http://willianjusten.com.br/cursos">willianjusten.com.br/cursos</a>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h4>Alguns lugares que já trabalhei...</h4><img src="img/jobs.png" alt="Jobs">
+        </section>
+        <section>
+          <h2>Web Audio API</h2>
+          <ul class="align-left web-audio-options">
+            <li class="fragment">Criar músicas</li>
+            <li class="fragment">Colocar efeitos</li>
+            <li class="fragment">Criar espacialização do audio</li>
+            <li class="fragment">Criar visualizações em tempo real</li>
+            <li class="fragment">Etc...</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Web Audio API</h2>
+          <ul class="align-left web-audio-options">
+            <li>Criar músicas</li>
+            <li>Colocar efeitos</li>
+            <li>Criar espacialização do audio</li>
+            <li class="highlight-item">Criar visualizações em tempo real</li>
+            <li>Etc...</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Audio Visualization</h2>
+          <ul class="align-left list-itens">
+            <li class="visualizers">Visualizers</li>
+            <li class="dsp">Digital Signal Processing (DSP)</li>
+            <li class="web-audio">Web Audio API</li>
+          </ul>
+        </section>
+        <section data-state="winamp">
+          <h2>Visualizers</h2><img src="img/winamp-visualizers.png" alt="Winamp Logo">
+        </section>
+        <section>
+          <h2>Exemplo Incrível</h2>
+          <p><a href="https://lhbzr.com/">lhbzr portifólio </a>por <a href="https://github.com/lhbzr/">Luis Henrique Bizarro</a></p><img src="img/bizarro.png" alt="Luis Henrique Bizarro Portifólio">
+        </section>
+        <section>
+          <h2>Visualizers</h2>
+          <div class="col col-70 align-left fragment">
+            <h4>O que são?</h4>
+            <p>São imagens geradas em tempo real baseadas num stream de data de um audio. Podendo ser <span class="highlight-item">determinísticos </span>ou <span class="highlight-item">não-determinísticos.</span></p>
+          </div>
+          <div class="col col-30 align-left fragment">
+            <h4>Como fazer?</h4>
+            <ul class="non-style">
+              <li><a href="http://threejs.org/">Three.JS</a></li>
+              <li><a href="http://p5js.org/">P5.JS</a></li>
+              <li><a href="https://d3js.org/">D3.JS</a></li>
+              <li><a href="https://github.com/willianjusten/awesome-audio-visualization">Canvas / CSS+JS</a></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Digital Signal Processing (DSP)</h2>
+          <div class="align-left fragment space-top">
+            <p>
+               
+              É uma <span class="highlight-item">análise </span>e/ou <span class="highlight-item">modificação de sinais </span>utilizando teoria fundamental, aplicações e algoritmos, de forma a <span class="highlight-item">extrair informações </span>dos mesmos e/ou torná-los mais apropriados para alguma <span class="highlight-item">aplicação específica.</span>
+            </p>
+          </div>
+        </section>
+        <section>
+          <h1>TL;DR</h1>
+        </section>
+        <section>
+          <h2>DSP</h2><img src="img/signal.png" alt="Ondas">
+          <p>Interpretar ondas como um grande <span class="highlight-item">conjunto de dados.</span></p>
+        </section>
+        <section>
+          <h2>Sample Rate</h2><img src="img/sample-rate.png" alt="Sample Rate">
+        </section>
+        <section>
+          <h3>Frequency and Time Domain</h3><img src="img/time-frequency-domain.png" alt="Time and Frequency Domain">
+        </section>
+        <section>
+          <h2>Time Domain</h2><img src="img/soundcloud-time.png" alt="Soundcloud">
+        </section>
+        <section>
+          <h2>Frequency Domain</h2><img src="img/frequency.jpg" alt="Frequency Domain">
+        </section>
+        <section>
+          <h2>Web Audio API</h2><img src="img/webaudioapi.png" alt="Web Audio API">
+        </section>
+        <section>
+          <h2>Web Audio API Nodes</h2>
+          <div class="col col-33 align-left move-left-minor">
+            <ul class="list-none">
+              <li class="main-item">Source</li>
+              <li>Media Element</li>
+              <li>Media Stream</li>
+              <li>Oscillator</li>
+              <li>Buffer</li>
+            </ul>
+          </div>
+          <div class="col col-33 align-left">
+            <ul class="list-none">
+              <li class="main-item">Utility</li>
+              <li>Script Proc.</li>
+              <li>Analyzer</li>
+              <li>Channel Splitter</li>
+              <li>Channel Merger</li>
+            </ul>
+          </div>
+          <div class="col col-20 align-left">
+            <ul class="list-none">
+              <li class="main-item">Effect</li>
+              <li>Gain</li>
+              <li>Biquad Filter</li>
+              <li>Delay</li>
+              <li>Convolver</li>
+              <li>Compressor</li>
+              <li>WaveShaper</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Web Audio API Nodes</h2>
+          <div class="col col-33 align-left move-left-minor">
+            <ul class="list-none">
+              <li class="main-item">Source</li>
+              <li class="highlight-item">Media Element</li>
+              <li>Media Stream</li>
+              <li>Oscillator</li>
+              <li>Buffer</li>
+            </ul>
+          </div>
+          <div class="col col-33 align-left">
+            <ul class="list-none">
+              <li class="main-item">Utility</li>
+              <li class="highlight-item">Script Proc.</li>
+              <li class="highlight-item">Analyzer</li>
+              <li>Channel Splitter</li>
+              <li>Channel Merger</li>
+            </ul>
+          </div>
+          <div class="col col-20 align-left">
+            <ul class="list-none">
+              <li class="main-item">Effect</li>
+              <li>Gain</li>
+              <li>Biquad Filter</li>
+              <li>Delay</li>
+              <li>Convolver</li>
+              <li>Compressor</li>
+              <li>WaveShaper</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>"Hello World" AudioViz</h2>
+        </section>
+        <section>
+          <h2>Criando o audio</h2>
+          <pre class="prettyprint"><code class="javascript">var audio = new Audio();
+audio.src = 'track.mp3';
+audio.loop = true;
+audio.autoplay = true;
+audio.crossOrigin = "anonymous";</code></pre>
+        </section>
+        <section>
+          <h3>Criando analyser e conexões</h3>
+          <pre class="prettyprint"><code class="javascript">audioContext = new window.AudioContext();
+source = audioContext.createMediaElementSource(audio);
+
+analyser = audioContext.createAnalyser();
+fbc_array = new Uint8Array(analyser.frequencyBinCount);
+
+source.connect(analyser);
+analyser.connect(audioContext.destination);</code></pre>
+        </section>
+        <section>
+          <h2>Gráfico das conexões</h2><img src="img/source-analyser-destination.png" alt="Gráfico das conexões">
+        </section>
+        <section>
+          <h3>Criando a Animação</h3>
+          <pre class="prettyprint"><code class="javascript">function frameLooper() {
+    window.requestAnimationFrame(frameLooper);
+    analyser.getByteFrequencyData(fbc_array);
+    render();
+}</code></pre>
+        </section>
+        <section>
+          <h1>Exemplo</h1>
+          <p><a href="https://willianjusten.com.br/audio-experiments/bars/">Bars </a>/ <a href="https://willianjusten.com.br/audio-experiments/triangles/">Triangles</a></p>
+        </section>
+        <section>
+          <h2>Quer saber mais?</h2><img src="img/awesome-audioviz.png" alt="Awesome AudioViz Logo"><a href="http://shiz.co/aav/">shiz.co/aav</a>
+        </section>
+        <section>
+          <h1>Obrigado</h1><a href="https://willianjusten.com.br/frontinsampa-16" class="bigger-link">bit.ly/fis-av</a>
+        </section>
+      </div>
+    </div>
+    <script src="js/vendor/head.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor/prettify/prettify.js"></script>
+  </body>
+</html>

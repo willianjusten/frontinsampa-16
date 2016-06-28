@@ -13,8 +13,8 @@ First of all, install the dependencies to run this boilerplate.
 
 ```sh
 # Clone this repository
-$ git clone git@github.com:willianjusten/front-in-sampa.git
-$ cd front-in-sampa
+$ git clone git@github.com:willianjusten/frontinsampa-16.git
+$ cd frontinsampa-16
 
 # install dependencies
 $ npm install

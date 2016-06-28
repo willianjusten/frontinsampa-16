@@ -1,4 +1,4 @@
-# [Front in Sampa 16 - JS <3 Music](http://willianjusten.com.br/front-in-sampa/)
+# [Front in Sampa 16 - JS <3 Music](http://willianjusten.com.br/frontinsampa-16/)
 
 This Presentation uses [Qualy Boilerplate](https://github.com/Qualy-org/qualy-presenter)
 

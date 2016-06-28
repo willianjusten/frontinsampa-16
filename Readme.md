@@ -1,12 +1,8 @@
-# Front in Sampa 16 - JS <3 Music
+# [Front in Sampa 16 - JS <3 Music](http://willianjusten.com.br/front-in-sampa/)
 
 This Presentation uses [Qualy Boilerplate](https://github.com/Qualy-org/qualy-presenter)
 
 ## Getting Started
-
-### Live
-
-You can see the demo [here](http://willianjusten.com.br/front-in-sampa/)
 
 ### Installation
 

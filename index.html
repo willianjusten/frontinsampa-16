@@ -108,10 +108,13 @@
         </section>
         <section data-background-image="img/console-data.gif"></section>
         <section>
-          <h2>Sample Rate</h2><img src="img/sample-rate.png" alt="Sample Rate">
+          <h3>Sample Rate / Bit Depth</h3><img src="img/sample-rate.png" alt="Sample Rate">
         </section>
         <section>
-          <h3>Frequency and Time Domain</h3><img src="img/time-frequency-domain.png" alt="Time and Frequency Domain">
+          <h2>Qualidade</h2><img src="img/quality.png" alt="Qualidade">
+        </section>
+        <section>
+          <h3>Time and Frequency Domain</h3><img src="img/time-frequency-domain.png" alt="Time and Frequency Domain">
         </section>
         <section>
           <h2>Time Domain</h2><img src="img/soundcloud-time.png" alt="Soundcloud">
@@ -190,6 +193,9 @@
           <h2>"Hello World" AudioViz</h2>
         </section>
         <section>
+          <h2>Gráfico das conexões</h2><img src="img/source-graph.png" alt="Gráfico das conexões">
+        </section>
+        <section>
           <h2>Criando o audio</h2>
           <pre class="prettyprint"><code class="javascript">var audio = new Audio();
 audio.src = 'track.mp3';
@@ -198,18 +204,33 @@ audio.autoplay = true;
 audio.crossOrigin = "anonymous";</code></pre>
         </section>
         <section>
-          <h3>Criando analyser e conexões</h3>
+          <h3>Ligar o audio ao contexto</h3>
           <pre class="prettyprint"><code class="javascript">audioContext = new window.AudioContext();
-source = audioContext.createMediaElementSource(audio);
-
-analyser = audioContext.createAnalyser();
-fbc_array = new Uint8Array(analyser.frequencyBinCount);
-
-source.connect(analyser);
+source = audioContext.createMediaElementSource(audio);</code></pre>
+          <p class="fragment">O contexto de áudio que controla a criação dos nodes e execução do processamento de áudio.</p>
+        </section>
+        <section>
+          <h2>Gráfico das conexões</h2><img src="img/analyser-graph.png" alt="Gráfico das conexões">
+        </section>
+        <section>
+          <h3>Criando o analyser</h3>
+          <pre class="prettyprint"><code class="javascript">analyser = audioContext.createAnalyser();
+fbc_array = new Uint8Array(analyser.frequencyBinCount);</code></pre>
+          <p class="fragment">O AnalyserNode é capaz de fornecer informações sobre o frequency e o time-domain em tempo real.</p>
+        </section>
+        <section>
+          <h2>Gráfico das conexões</h2><img src="img/destination-graph.png" alt="Gráfico das conexões">
+        </section>
+        <section>
+          <h3>Conectando o Analyser ao Destino</h3>
+          <pre class="prettyprint"><code class="javascript">source.connect(analyser);
 analyser.connect(audioContext.destination);</code></pre>
         </section>
         <section>
-          <h2>Gráfico das conexões</h2><img src="img/source-analyser-destination.png" alt="Gráfico das conexões">
+          <h3>
+             
+            Mas e a parte da <span class="highlight-item">animação</span>?
+          </h3>
         </section>
         <section>
           <h3>Criando a Animação</h3>
@@ -224,7 +245,8 @@ analyser.connect(audioContext.destination);</code></pre>
           <p><a href="https://willianjusten.com.br/audio-experiments/bars/">Bars </a>/ <a href="https://willianjusten.com.br/audio-experiments/triangles/">Triangles</a></p>
         </section>
         <section>
-          <h2>Quer saber mais?</h2><img src="img/awesome-audioviz.png" alt="Awesome AudioViz Logo"><a href="http://bit.ly/awesome-aav">bit.ly/awesome-aav</a>
+          <h3>Quer saber mais?</h3><img src="img/logo-aav.gif" alt="Awesome AudioViz Logo">
+          <p><a href="http://bit.ly/awesome-aav">bit.ly/awesome-aav</a></p>
         </section>
         <section>
           <h1>Obrigado</h1><a href="https://willianjusten.com.br/frontinsampa-16" class="bigger-link">bit.ly/fis-av</a>

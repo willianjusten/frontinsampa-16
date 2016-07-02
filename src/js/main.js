@@ -20,9 +20,13 @@ function heartBeat() {
     audio.play();
 }
 
+var winampPlay = false;
 function winamp() {
-    var audio = new Audio('musics/winamp.mp3');
-    audio.play();
+    if(!winampPlay) {
+        var audio = new Audio('musics/winamp.mp3');
+        audio.play();
+        winampPlay = true;
+    }
 }
 
 Reveal.addEventListener('winamp', winamp);
